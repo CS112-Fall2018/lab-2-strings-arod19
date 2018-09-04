@@ -5,8 +5,6 @@ public class StringFun {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-
-
 		Scanner scanner = new Scanner(System.in);
 		
 		String s;
@@ -27,7 +25,6 @@ public class StringFun {
 		int sLength = s.length();
 	
 		
-
 		System.out.println("\nLength of s String: " + sLength);
 		
 		System.out.println("Does s equals otherString?: " + s.equals(otherString));
@@ -54,41 +51,16 @@ public class StringFun {
 		
 		System.out.println("The character is: " + s.charAt(index));  
 		
-		System.out.println("Input a string (newString) to see if it is in the original string (s): ");
+		System.out.println("\nInput a string (newString) to see if it is in the original string (s): ");
 		newString = scanner.next();
 		
+		// .contains() returns a boolean, it is to check if "newString" is in "s".
 		System.out.println("Is it on the original string?: " + s.contains(newString));
 		
-		System.out.println("Now let's turn your original string to all upper case letters!");
+		// .toUpperCase returns all upper case letters of the string
+		System.out.println("\nNow let's turn your original string to all upper case letters!");
 		System.out.println("Here's the result: " + s.toUpperCase());
-		/*
-		1. In a static main method, take as a command line argument three strings: s, otherString, 
-		and subString.  
-		Note: if you want spaces in your String you have to use quotes around the argument,
-		 for example, “This string has spaces in it.”
-
-		2. Performs all 7 of the methods listed in #1 above on PLUS the two additional ones that you pick
-
-		3. Prints out the results of each method.
-
-		4. Make sure to add javadoc for the StringFun class  Explain in the Class comment  what two methods you picked and in your own words what each method does.
-
-		5. Create a doc sub-directory and then generate the javadoc with the command (run from your main working directory)
-
-		javadoc -d doc -version -author *a
 		
-		
-		
-		s.length() done 
-s.equals(otherString) done
-
-s.substring(startIndex, endIndex)
-s.trim()
-s.indexOf(subString) 
-s.lastIndexOf(subString)
-s.charAt(index)
-		*/
-
 	}
 
 }
